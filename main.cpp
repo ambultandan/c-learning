@@ -1,43 +1,24 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
+
 using namespace std;
 
 int main(){
-    int day = 5;
+    int n =5;
 
-    switch(day){
-        case 1: {
-            cout << "Monday\n";
-            break;
+    //outer loop - number of rows
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<2*n; j++){
+            if((i==j) || (i+j == 2*n)){
+                cout << "*";
+            }
+            else{
+                cout << " ";
+            }
         }
-        case 2: {
-            cout << "Tuesday\n";
-            break;
-        }
-        case 3: {
-            cout << "Wednesday\n";
-            break;
-        }
-        case 4: {
-            cout << "Thursdays\n";
-            break;
-        }
-        case 5: {
-            cout << "Friday\n";
-            break;
-        }
-        case 6: {
-            cout << "Saturday\n";
-            break;
-        }
-        case 7: {
-            cout << "Sunday\n";
-            break;
-        }
-        default : {
-            cout << "Invalid Input\n";
-            break;
-        }
+        cout << "\n";
     }
     return 0;
 }
