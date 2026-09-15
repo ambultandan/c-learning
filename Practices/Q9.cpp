@@ -1,4 +1,4 @@
-// Take units as inout. Calculate the electricity bill based on the number of units consumed.
+// Take units as input. Calculate the electricity bill based on the number of units consumed.
 
 #include <iostream>
 using namespace std;

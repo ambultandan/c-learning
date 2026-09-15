@@ -1,4 +1,4 @@
-// Take the ourchase amount as input and apply the following discount and print final amount.
+// Take the purchase amount as input and apply the following discount and print final amount.
 
 #include <iostream>
 using namespace std;
