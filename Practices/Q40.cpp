@@ -1,24 +1,26 @@
-// Sum of array elements.
+// Find maximum in Array.
+
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n, sum=0;
+    int n;
     cout << "Enter the size of array: ";
     cin >> n;
-    
+
     int arr[n];
     cout << "Enter " << n << " elements of array: ";
     for(int i=0; i<n; i++){
         cin >> arr[i];
     }
-
+    int max = arr[0];
     for(int i=0; i<n; i++){
-        sum = sum + arr[i];
+        if(arr[i]>=max){
+            max = arr[i];
+        }
     }
-
-    cout << "Sum of array elements = " << sum << "\n";
+    cout << "Maximum = " << max << "\n";
 
     return 0;
 }
