@@ -7,27 +7,9 @@ using namespace std;
     
 int main(){
     int n;
-    cout << "Enter the size of array: ";
+    cout << "Enter the size of array":
     cin >> n;
 
-    int arr[n];
-    cout << "Enter " << n << " elements of array: ";
-    for(int i=0; i<n; i++){
-        cin >> arr[i];
-    }
-    int s=0, e=n-1;
-    while(s<e){
-        int temp = arr[s];
-        arr[s]=arr[e];
-        arr[e]=arr[e];
-        s++;
-        e--;
-    }
-
-    for(int i=0; i<n; i++){
-        cout << arr[i] << " ";
-    }
-    cout << "\n";
-
+    
     return 0;
 } 
