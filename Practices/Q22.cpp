@@ -1,4 +1,4 @@
-// Take a number as input and count the total number of digits in it.
+// Take a number n as input and find its multip,e from 1 to n.
 
 #include <iostream>
 using namespace std;

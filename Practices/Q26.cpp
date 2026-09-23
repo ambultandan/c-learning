@@ -1,4 +1,4 @@
-// TAke a number N as i nput and calculate the sum of its digit.
+// Take a number N as i nput and calculate the sum of its digit.
 
 #include <iostream>
 using namespace std;

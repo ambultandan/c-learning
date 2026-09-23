@@ -1,15 +1,27 @@
 #include <iostream>
-#include <string>
-#include <cstdlib>
-#include <ctime>
-
+#include <cmath>
 using namespace std;
-    
-int main(){
-    int n;
-    cout << "Enter the size of array":
-    cin >> n;
 
-    
+int main() {
+    int n;
+    cout << "Enter the number : ";
+    cin >> n;
+    int c=0;
+    int copy = n, sum=0;
+
+    while (n>0{
+        c++;
+        n = n/10;
+    }
+    n = copy;
+
+    while(n>0){
+        int lastdigit = n%10;
+        sum = sum + pow(lastdgit, c);
+        n = n/10;]
+    }
+    n = copy;
+
+    cout << ((sum == n) ? "Armstrong Number\n" : " Not an Armstrong number \n");
     return 0;
-} 
+}

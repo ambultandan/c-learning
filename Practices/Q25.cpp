@@ -4,11 +4,11 @@
 using namespace std;
 
 int main() {
-    int n, fact, sum=0, original, digit=1;
+    int n, fact, sum=0, copy, digit=1;
     cout << "Enter the number: ";
     cin >> n;
     
-    original = n;
+    copy = n;
 
     for(; n!=0; n=n/10){
         digit = n%10;
@@ -18,11 +18,11 @@ int main() {
         }
         sum = sum + fact;
     }
-    if(sum == original){
-        cout << "Strong Number." << "\n";
+    if(sum == copy){
+        cout << "Strong Number.\n";
     }
     else{
-        cout << "Not a Strong Number." << "\n";
+        cout << "Not a Strong Number.\n";
     }
     return 0;
 }
