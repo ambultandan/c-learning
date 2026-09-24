@@ -8,18 +8,18 @@ int main() {
     int n;
     cout << "Enter the number: ";
     cin >> n;
-    int c=0; 
+    int count = 0; 
     int copy = n, sum = 0;
 
     while (n>0){
-        c++;
+        count++;
         n /= 10;
     }
     n = copy;
 
     while(n>0){
         int lastdigit = n%10;
-        sum = sum + pow(lastdigit, c);
+        sum = sum + pow(lastdigit, count);
         n /= 10;
     }
     n = copy;

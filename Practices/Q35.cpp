@@ -4,7 +4,7 @@
 using namespace std;
 
 // Function Declaration and Defination.
-void factor(int n){
+int factor(int n){
     cout << "Factors :- " << "\n";
     for(int i=1; i<=n; i++){
         if(n%i==0){

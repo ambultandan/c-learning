@@ -2,26 +2,23 @@
 #include <cmath>
 using namespace std;
 
+
 int main() {
     int n;
-    cout << "Enter the number : ";
+    cout << "Enter the size of array: ";
     cin >> n;
-    int c=0;
-    int copy = n, sum=0;
 
-    while (n>0{
-        c++;
-        n = n/10;
+    int arr[n];
+    cout << "Enter " << n << " elements of array: \n";
+    for(int i=0; i<n; i++){
+        cin >> arr[i];
     }
-    n = copy;
-
-    while(n>0){
-        int lastdigit = n%10;
-        sum = sum + pow(lastdgit, c);
-        n = n/10;]
+    int max = arr[0];
+    for(int i=0; i<n; i++){
+        if(arr[i]>=max){
+            max = arr[i];
+        }
     }
-    n = copy;
-
-    cout << ((sum == n) ? "Armstrong Number\n" : " Not an Armstrong number \n");
+    cout << max << "\n";
     return 0;
 }
