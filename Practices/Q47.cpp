@@ -9,6 +9,7 @@ int main() {
     cin >> n;
 
     int arr[n];
+    cout << "Enter " << n << " elements of array: \n";
     for(int i=0; i<n; i++){
         cin >> arr[i];
     }
@@ -18,6 +19,7 @@ int main() {
 
     int sum=0, c=0;
     for(int i=0; i<n; i++){
+        sum = 0;
         for(int j=i; j<n; j++){
             sum += arr[j];
             if(sum == target){
@@ -25,5 +27,6 @@ int main() {
             }
         }
     }
+    cout << "Subarrays = " << c << "\n";
     return 0;
 }
