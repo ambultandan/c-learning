@@ -1,32 +1,14 @@
 #include <iostream>
-#include <cmath>
+#include <cstring>
 using namespace std;
 
 
 int main() {
-    int rows, cols;
-    cout << "Enter the number of rows: ";
-    cin >> rows;
+    string str = "Golu";
+    string str2 = "Polu";
 
-    cout << "Enter the number of cols";
-    cin >> cols;
+    str.swap(str2);
+    cout << str << endl;
 
-    int mat[rows][]
-
-    for(int i=0; i<rows; i++){
-        for(int j=0; j<cols; j++){
-            cin >> mat[i][j];
-        }
-    }
-
-    int sum = 0
-    for(int i=0; i<rows; i++){
-        for(int j=0; j<cols; j++){
-            sum += mat[i][j];
-        }
-        cout << endl;
-    }
-
-    cout << "Sum = " << sum << 
     return 0;
 }
