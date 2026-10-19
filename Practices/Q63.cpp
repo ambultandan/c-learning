@@ -1,4 +1,4 @@
-// 2000.(leetcode) reverse Prefix of Word.
+// 2000.(leetcode) reverse Prefix of Word.(in-built method)
 
 #include <iostream>
 #include <cstring>
