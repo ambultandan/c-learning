@@ -2,38 +2,28 @@
 #include <cstring>
 using namespace std;
 
-class Form{
-    public://access modifier ||
-        string name;//data members || properties || attributes.
-        int *age;
-    
-    Form(string name, int age){
-        cout << "Constructor Called!!" << endl;
-        this->name = name;
-        this->age = new int(age);
-    }
+class Student {
+        public:
+            string name;
+            int age;
 
-    ~Form(){
-        cout << "Destructor called!!" << endl;
-    }
+            Student(string a, int n){
+                name = a;
+                age = n;
+            }
 
-    // //copy constructor
-    // Form(Form &obj){
-    //     this->name = obj.name;
-    //     this->age = new int(*obj.age);
-    // }
+            Student(const Student& other): name(other.name), age(other.age){
+                cout << "Copy constructor called!" << endl;
+            }
+        };
 
-    void display(){
-        cout << "{Name : " << name << ", Age : " << *age << "}" << endl;
-    }
-};
 
 int main() {
-    Form obj1("Golu", 21);//static
-    obj1.display();
+    Student s1("Golu", 19);
+    Student s2 = s1;
 
-    Form *obj2 = new Form("Polu", 21);//dynamic
-    obj2->display();
+    cout << s2.name << endl;
+    cout << s2.age << endl;
 
     return 0;
 }
