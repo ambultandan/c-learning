@@ -1,30 +1,37 @@
+
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-class Student {
-        public:
-            string name;
-            int age;
+class Animal {
+public:
+    virtual void sound() {
+        cout << "Animal sound" << endl;
+    }
+};
 
-            Student(string a, int n){
-                name = a;
-                age = n;
-            }
+class Dog : public Animal {
+public:
+    void sound() override {
+        cout << "Bark!" << endl;
+    }
+};
 
-            Student(const Student& other): name(other.name), age(other.age){
-                cout << "Copy constructor called!" << endl;
-            }
-        };
-
+class Cat : public Animal {
+public:
+    void sound() override {
+        cout << "Meow!" << endl;
+    }
+};
 
 int main() {
-    Student s1("Golu", 19);
-    Student s2 = s1;
+    Dog d;
+    Cat c;
 
-    cout << s2.name << endl;
-    cout << s2.age << endl;
+    Animal* ptr;
 
-    return 0;
+    ptr = &d;
+    ptr->sound();
+
+    ptr = &c;
+    ptr->sound();
 }
-
